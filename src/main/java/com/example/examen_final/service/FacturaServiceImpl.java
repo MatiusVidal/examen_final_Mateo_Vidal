@@ -8,11 +8,13 @@ import com.example.examen_final.models.Factura;
 import com.example.examen_final.repository.FacturaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Service;
 
 /**
  *
  * @author usuario
  */
+@Service
 public class FacturaServiceImpl extends GenericServiceImpl<Factura,Long> implements FacturaService{
     
     @Autowired

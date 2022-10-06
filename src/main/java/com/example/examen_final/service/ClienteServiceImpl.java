@@ -8,11 +8,13 @@ import com.example.examen_final.models.Cliente;
 import com.example.examen_final.repository.ClienteRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Service;
 
 /**
  *
  * @author usuario
  */
+@Service
 public class ClienteServiceImpl extends GenericServiceImpl<Cliente,Long> implements ClienteService{
     
     @Autowired
